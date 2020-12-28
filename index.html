@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loader</title>
+  </head>
+  <body>
+    <div class="loader">
+      <div class="loader-in-1"></div>
+      <div class="loader-in-2"></div>
+      <div class="loader-in-3"></div>
+      <div class="loader-in-4"></div>
+      <div class="loader-in-5"></div>
+      <div class="loader-in-6"></div>
+      <div class="loader-in-7"></div>
+      <div class="loader-in-8"></div>
+      <div class="loader-in-9"></div>
+    </div>
+
+    <style>
+      * {
+        background: #222715;
+      }
+
+      .loader {
+        width: 300px;
+        height: 300px;
+        margin: 150px auto;
+        position: relative;
+      }
+
+      .loader > div {
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        background: transparent;
+        border-radius: 100%;
+        border: 7px solid transparent;
+        border-color: transparent transparent transparent #00ffea;
+        transform: translate(-50%, -50%) rotate(0);
+        animation: load 3s infinite ease-in-out;
+      }
+
+      .loader .loader-in-1 {
+        width: 60px;
+        height: 60px;
+        animation-delay: 0.2s;
+      }
+      .loader .loader-in-2 {
+        width: 75px;
+        height: 75px;
+        animation-delay: 0.3s;
+      }
+      .loader .loader-in-3 {
+        width: 90px;
+        height: 90px;
+        animation-delay: 0.4s;
+      }
+      .loader .loader-in-4 {
+        width: 105px;
+        height: 105px;
+        animation-delay: 0.5s;
+      }
+      .loader .loader-in-5 {
+        width: 120px;
+        height: 120px;
+        animation-delay: 0.6s;
+      }
+      .loader .loader-in-6 {
+        width: 135px;
+        height: 135px;
+        animation-delay: 0.7s;
+      }
+      .loader .loader-in-7 {
+        width: 150px;
+        height: 150px;
+        animation-delay: 0.8s;
+      }
+      .loader .loader-in-8 {
+        width: 165px;
+        height: 165px;
+        animation-delay: 0.9s;
+      }
+      .loader .loader-in-9 {
+        width: 180px;
+        height: 180px;
+        animation-delay: 1s;
+      }
+
+      @keyframes load {
+        50% {
+          transform: translate(-50%, -50%) rotate(360deg);
+          border-color: transparent transparent #ff0000 #e5ff00;
+        }
+        75% {
+          border-color: #5eff00 transparent transparent #ff009d;
+        }
+      }
+    </style>
+  </body>
+</html>
